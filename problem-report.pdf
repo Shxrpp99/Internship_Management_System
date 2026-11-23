@@ -1,0 +1,66 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 2033 >>
+stream
+BT /F1 11 Tf 50 790 Td 
+(Internship Management System - Problem Report) Tj 0 -16 Td
+(Inspection date: 13 November 2026) Tj 0 -16 Td
+() Tj 0 -16 Td
+(Findings) Tj 0 -16 Td
+(1. API port mismatch \(confirmed from source\)) Tj 0 -16 Td
+(   Frontend calls http://localhost:8080/api \(frontend/src/services/api.js\).) Tj 0 -16 Td
+(   Backend is configured for port 8081 \(backend/src/main/resources/application.properties\).) Tj 0 -16 Td
+(   Result: UI can load, but API requests fail to connect.) Tj 0 -16 Td
+(   README also tells you to expect backend on port 8080.) Tj 0 -16 Td
+() Tj 0 -16 Td
+(2. Java runtime is below the project requirement \(confirmed locally\)) Tj 0 -16 Td
+(   Backend pom.xml requires Java 21. Installed java reports version 17.0.12.) Tj 0 -16 Td
+(   Result: running the backend with this Java can fail at startup or compilation.) Tj 0 -16 Td
+() Tj 0 -16 Td
+(3. Frontend packages are not installed \(confirmed locally\)) Tj 0 -16 Td
+(   frontend/node_modules is absent. npm install is needed before npm run dev.) Tj 0 -16 Td
+(   Node 24 is installed; the project documentation asks for Node 20+.) Tj 0 -16 Td
+() Tj 0 -16 Td
+(4. PostgreSQL service is running) Tj 0 -16 Td
+(   A PostgreSQL Windows service was found running.) Tj 0 -16 Td
+(   Database connectivity and credentials still need runtime confirmation.) Tj 0 -16 Td
+() Tj 0 -16 Td
+(Recommended run order) Tj 0 -16 Td
+(   Install/use Java 21 and Maven 3.9+.) Tj 0 -16 Td
+(   Ensure PostgreSQL database internship_db exists and credentials match) Tj 0 -16 Td
+(   backend/src/main/resources/application.properties.) Tj 0 -16 Td
+(   From frontend: npm install, then npm run dev.) Tj 0 -16 Td
+(   Start backend after selecting a consistent API port.) Tj 0 -16 Td
+() Tj 0 -16 Td
+(Note) Tj 0 -16 Td
+(   This report is based on project source/configuration and local runtime checks.) Tj 0 -16 Td
+(   The PDF documentation could not be text-extracted in this environment.) Tj 0 -16 Td
+(   No code changes had been made when this report was generated.) Tj 0 -16 Td
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2396
+%%EOF
